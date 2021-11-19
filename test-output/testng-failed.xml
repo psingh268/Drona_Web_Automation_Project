@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Drona Web Suite]">
+  <listeners>
+    <listener class-name="com.qa.reports.ListenerClass"/>
+    <listener class-name="com.qa.reports.TestAllureListener"/>
+  </listeners>
+  <test thread-count="3" name="Regression Test(failed)">
+    <classes>
+      <class name="com.qa.TestCases.DronaStaffTestPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyCheckedInAppointment"/>
+          <include name="verifyAssistantNameEdit"/>
+          <include name="flushDownload"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.DronaStaffTestPage -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Drona Web Suite] -->

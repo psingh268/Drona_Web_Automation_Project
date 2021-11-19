@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Drona Web Suite" configfailurepolicy="continue"
+	thread-count="3">
+
+   <listeners>  
+    <listener class-name="com.qa.reports.ListenerClass" /> 
+    <listener class-name="com.qa.reports.TestAllureListener" />  
+    <!-- <listener class-name="com.qa.reports.AnnotationTransformer" /> -->
+	</listeners>
+
+ <test name="Regression Test"  preserve-order="true" >
+    <classes>
+      <!--  <class name="com.qa.TestCases.DronaLoginTestPage"/> 
+      <class name="com.qa.TestCases.DronaAddClinicTestPage"/>  
+     <class name="com.qa.TestCases.DronaClinicSetUpTestPage"/> 
+     <class name="com.qa.TestCases.DoctorProfileTestPage"/> 
+      <class name="com.qa.TestCases.DronaAddBankDetailTestPage"/> 
+      <class name="com.qa.TestCases.BookAppointmentTestPage"/>  
+      <class name="com.qa.TestCases.ConsultTestPage"/>   
+      <class name="com.qa.TestCases.DronaBillingTestPage"/> 
+      <class name="com.qa.TestCases.PrescriptionFormatTestPage"/> 
+      <class name="com.qa.TestCases.CommunityTestPage"/> 
+      <class name="com.qa.TestCases.DronaAddClinicTestPage"/>  
+      <class name="com.qa.TestCases.DronaAddPatientTestPage"/>
+      <class name="com.qa.TestCases.HomeTestPage"/>
+      <class name="com.qa.TestCases.FileUploadTestPage"/>
+      <class name="com.qa.TestCases.PastEncounterTestPage"/> 
+      <class name="com.qa.TestCases.DronaStaffTestPage"/> 
+      <class name="com.qa.TestCases.MSiteTestPage"/>
+     <class name="com.qa.TestCases.QrCodeTestPage"/>  -->
+    <class name="com.qa.TestCases.DronaAddClinicTestPage"/>  
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+    
+    
+    
+    
